@@ -7,7 +7,7 @@
     "logo_white": "/images/logo-light.png",
     "logo_width": "150",
     "logo_height": "39",
-    "logo_text": "Geeky"
+    "logo_text": "Sulojan"
   },
   "settings": {
     "theme_switcher": true,
@@ -28,7 +28,7 @@
   "metadata": {
     "meta_author": "Sulojan",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Geeky Nextjs Personal Blog Template"
+    "meta_description": "Sulojan Blogs Personal Blog Template"
   },
   "widgets": {
     "about": {

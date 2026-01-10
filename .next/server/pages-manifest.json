@@ -2,6 +2,13 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/404": "pages/404.js",
+  "/categories/[category]": "pages/categories/[category].js",
+  "/[regular]": "pages/[regular].js",
+  "/search": "pages/search.html",
+  "/page/[slug]": "pages/page/[slug].js",
+  "/categories": "pages/categories.js",
   "/": "pages/index.js",
-  "/[regular]": "pages/[regular].js"
+  "/posts": "pages/posts.js",
+  "/posts/[single]": "pages/posts/[single].js"
 }

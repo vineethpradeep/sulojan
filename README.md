@@ -1,19 +1,19 @@
-<h1 align=center>Geeky Nextjs</h1>
+<h1 align=center>Sulojan Blogs</h1>
 
 #### Preview
 
-- [Demo](https://themewagon.github.io/sulojan.org/)
+- [Demo](https://https://github.com/vineethpradeep/sulojan/)
 
 #### Download
 
-- [Download from ThemeWagon](https://themewagon.com/themes/sulojan.org/)
+- [Download from Sulojan](https://github.com/vineethpradeep/sulojan/)
 
 ## Getting Started
 
 Clone from GitHub
 
 ```
-https://github.com/themewagon/sulojan.org.git
+https://github.com/vineethpradeep/sulojan
 ```
 
 ## Author
@@ -24,4 +24,4 @@ Design and code are completely written by Sulojan's design and development team.
 
 - Design and Code is Copyright &copy; [Sulojan](https://Sulojan.org/)
 - Licensed under [MIT]
-- Distributed by [ThemeWagon](https://themewagon.com)
+- Distributed by [Sulojan](https://sulojan.netlify.app/)

@@ -1,0 +1,14 @@
+"use strict";
+exports.id = 626;
+exports.ids = [626];
+exports.modules = {
+
+/***/ 6626:
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"site":{"title":"Sulojan.org","base_url":"/","favicon":"/images/favicon.png","logo":"/images/logo.png","logo_white":"/images/logo-light.png","logo_width":"150","logo_height":"39","logo_text":"Sulojan"},"settings":{"theme_switcher":true,"default_theme":"system","pagination":6,"InnerPaginationOptions":{"enableTop":false,"enableBottom":true},"summary_length":200,"blog_folder":"posts"},"params":{"tag_manager_id":"","footer_content":"Sulojan is an education and research portfolio highlighting academic studies, technical projects, and experiments in learning, technology, and innovation.","copyright":"Designed and Developed By [Sulojan](https://Sulojan.org/)"},"metadata":{"meta_author":"Sulojan","meta_image":"/images/og-image.png","meta_description":"Sulojan Blogs Personal Blog Template"},"widgets":{"about":{"enable":true,"content":"Sulojan is an education and research portfolio highlighting academic studies, technical projects, and experiments in learning, technology, and innovation."},"featured_posts":{"enable":true,"title":"Blog Categories","showPost":3},"categories":{"enable":true,"title":"Blog Categories"},"newsletter":{"enable":true,"title":"Newsletter","content":"Subscribe to our newsletter to get the latest updates straight to your inbox.","privacy_policy_page":"#","malichipm_url":""}},"disqus":{"enable":true,"shortname":"themefisher-template","settings":{}}}');
+
+/***/ })
+
+};
+;
