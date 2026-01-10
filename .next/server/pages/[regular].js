@@ -93,52 +93,6 @@ const About = ({ data  })=>{
                         ...mdxContent,
                         components: _shortcodes_all__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z
                     })
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "row mt-24 text-left lg:flex-nowrap",
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "lg:col-6 ",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "rounded border border-border p-6 dark:border-darkmode-border ",
-                                children: [
-                                    (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_1__/* .markdownify */ .gI)(education.title, "h2", "section-title mb-12"),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "row",
-                                        children: education.degrees.map((degree, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "mb-7 md:col-6",
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                        className: "text-base lg:text-[25px]",
-                                                        children: degree.university
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        className: "mt-2",
-                                                        children: degree.content
-                                                    })
-                                                ]
-                                            }, "degree-" + index))
-                                    })
-                                ]
-                            })
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "experience mt-10 lg:mt-0 lg:col-6",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "rounded border border-border p-6 dark:border-darkmode-border ",
-                                children: [
-                                    (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_1__/* .markdownify */ .gI)(experience.title, "h2", "section-title mb-12"),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                        className: "row",
-                                        children: experience?.list?.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                className: "mb-5 text-lg font-bold text-dark dark:text-darkmode-light lg:col-6",
-                                                children: item
-                                            }, "experience-" + index))
-                                    })
-                                ]
-                            })
-                        })
-                    ]
                 })
             ]
         })
