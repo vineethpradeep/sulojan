@@ -1,6 +1,6 @@
 ---
 title: "My Next Step in Inclusive Education"
-date: 2022-04-04T11:00:00Z
+date: 2025-07-05T11:00:00Z
 image: /images/post/post-6.png
 categories: ["assistance"]
 featured: true

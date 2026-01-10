@@ -1,6 +1,6 @@
 ---
 title: "Maths Anxiety in Children"
-date: 2022-04-04T11:00:00Z
+date: 2024-12-12T11:00:00Z
 image: /images/post/post-3.png
 categories: ["assistance"]
 featured: false

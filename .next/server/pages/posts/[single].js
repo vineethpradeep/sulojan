@@ -86,7 +86,7 @@ const PostSingle = ({ frontmatter , content , mdxContent , slug , posts , allCat
                                                         className: "rounded-lg"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                                        className: "absolute top-3 left-2 flex flex-wrap items-center",
+                                                        className: "absolute left-2 top-3 flex flex-wrap items-center",
                                                         children: categories.map((tag, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                                 className: "mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white",
                                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {

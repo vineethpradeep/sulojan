@@ -1,6 +1,6 @@
 ---
 title: "The Economic Cost of Neglecting Learning Difficulties"
-date: 2022-04-04T12:00:00Z
+date: 2025-02-10T12:00:00Z
 image: /images/post/post-4.png
 categories: ["github"]
 featured: true

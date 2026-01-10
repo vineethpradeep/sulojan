@@ -1,6 +1,6 @@
 ---
 title: "The Hidden Crisis of Dyscalculia"
-date: 2022-04-04T13:00:00Z
+date: 2025-03-04T13:00:00Z
 image: /images/post/post-5.png
 categories: ["youtube", "artificial-intelligence"]
 featured: false

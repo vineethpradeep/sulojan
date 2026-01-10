@@ -1,6 +1,6 @@
 ---
 title: "Sri Lanka’s SEN Education Gap"
-date: 2022-04-04T07:00:00Z
+date: 2025-04-28T07:00:00Z
 image: /images/post/post-2.png
 categories: ["programming", "youtube"]
 featured: false

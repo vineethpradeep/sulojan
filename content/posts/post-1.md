@@ -1,6 +1,6 @@
 ---
 title: "SEN Learning and AI"
-date: 2025-05-04T14:00:00Z
+date: 2025-05-8T14:00:00Z
 image: /images/post/post-1.png
 categories: ["robotics", "youtube"]
 featured: true
