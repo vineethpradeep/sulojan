@@ -48,7 +48,7 @@ var style = __webpack_require__(1733);
 
 const App = ({ Component , pageProps  })=>{
     // default theme setup
-    const { default_theme  } = config.settings;
+    const { default_theme  } = config/* settings */.Xd;
     // import google font css
     const pf = theme_namespaceObject.R.k.T$;
     const sf = theme_namespaceObject.R.k.BD;
@@ -61,11 +61,11 @@ const App = ({ Component , pageProps  })=>{
     ]);
     // google tag manager (gtm)
     const tagManagerArgs = {
-        gtmId: config.params.tag_manager_id
+        gtmId: config/* params.tag_manager_id */.f.tag_manager_id
     };
     (0,external_react_.useEffect)(()=>{
         setTimeout(()=>{
-             true && config.params.tag_manager_id && external_react_gtm_module_default().initialize(tagManagerArgs);
+             true && config/* params.tag_manager_id */.f.tag_manager_id && external_react_gtm_module_default().initialize(tagManagerArgs);
         }, 5000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

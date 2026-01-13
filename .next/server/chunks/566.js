@@ -61,7 +61,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lay
 
 
 
-const { blog_folder , summary_length  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+const { blog_folder , summary_length  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
 // blog pagination
 const BlogPagination = ({ postIndex , posts , currentPage , pagination  })=>{
     const indexOfLastPost = currentPage * pagination;
@@ -102,7 +102,7 @@ const BlogPagination = ({ postIndex , posts , currentPage , pagination  })=>{
 const getStaticPaths = ()=>{
     const getAllSlug = (0,_lib_contentParser__WEBPACK_IMPORTED_MODULE_4__/* .getSinglePage */ .il)(`content/${blog_folder}`);
     const allSlug = getAllSlug.map((item)=>item.slug);
-    const { pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+    const { pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
     const totalPages = Math.ceil(allSlug.length / pagination);
     let paths = [];
     for(let i = 1; i < totalPages; i++){
@@ -120,7 +120,7 @@ const getStaticPaths = ()=>{
 // get blog pagination content
 const getStaticProps = async ({ params  })=>{
     const currentPage = parseInt(params && params.slug || 1);
-    const { pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+    const { pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
     const posts = (0,_lib_contentParser__WEBPACK_IMPORTED_MODULE_4__/* .getSinglePage */ .il)(`content/${blog_folder}`);
     const postIndex = await (0,_lib_contentParser__WEBPACK_IMPORTED_MODULE_4__/* .getListPage */ .di)(`content/${blog_folder}/_index.md`);
     return {

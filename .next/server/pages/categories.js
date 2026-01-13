@@ -74,7 +74,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lay
 
 
 
-const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
 
 
 

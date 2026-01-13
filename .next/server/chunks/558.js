@@ -129,8 +129,8 @@ _lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_8__ = (__webpack_async_depende
 
 
 
-const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
-const { about , featured_posts , newsletter  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.widgets;
+const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
+const { about , featured_posts , newsletter  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .widgets */ .DA;
 const Sidebar = ({ posts , categories , className  })=>{
     const sortPostByDate = (0,_lib_utils_sortFunctions__WEBPACK_IMPORTED_MODULE_13__/* .sortByDate */ .d)(posts);
     const featuredPosts = sortPostByDate.filter((post)=>post.frontmatter.featured);

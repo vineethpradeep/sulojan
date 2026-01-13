@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Document = ()=>{
     // destructuring items from config object
-    const { favicon  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.site;
+    const { favicon  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .site */ .lz;
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(next_document__WEBPACK_IMPORTED_MODULE_2__.Html, {
         lang: "en",
         children: [

@@ -4,7 +4,7 @@ import ImageFallback from "@layouts/components/ImageFallback";
 import InnerPagination from "@layouts/components/InnerPagination";
 import dateFormat from "@lib/utils/dateFormat";
 import { markdownify } from "@lib/utils/textConverter";
-import { DiscussionEmbed } from "disqus-react";
+import PostComments from "./components/PostComments";
 import { MDXRemote } from "next-mdx-remote";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -12,19 +12,19 @@ import { FaRegCalendar, FaUserAlt } from "react-icons/fa";
 import Post from "./partials/Post";
 import Sidebar from "./partials/Sidebar";
 import shortcodes from "./shortcodes/all";
-const { disqus } = config;
 const { meta_author } = config.metadata;
 
 const PostSingle = ({
-  frontmatter,
-  content,
-  mdxContent,
-  slug,
-  posts,
-  allCategories,
-  relatedPosts,
+  frontmatter = {},
+  content = "",
+  mdxContent = null,
+  slug = "",
+  posts = [],
+  allCategories = [],
+  relatedPosts = [],
+  comments = [],
 }) => {
-  let { description, title, date, image, categories } = frontmatter;
+  let { description, title, date, image, categories = [] } = frontmatter || {};
   description = description ? description : content.slice(0, 120);
 
   const { theme } = useTheme();
@@ -53,19 +53,20 @@ const PostSingle = ({
                     />
                   )}
                   <ul className="absolute left-2 top-3 flex flex-wrap items-center">
-                    {categories.map((tag, index) => (
-                      <li
-                        className="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"
-                        key={"tag-" + index}
-                      >
-                        <Link
-                          className="capitalize"
-                          href={`/categories/${tag.replace(" ", "-")}`}
+                    {Array.isArray(categories) &&
+                      categories.map((tag, index) => (
+                        <li
+                          className="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"
+                          key={"tag-" + index}
                         >
-                          {tag}
-                        </Link>
-                      </li>
-                    ))}
+                          <Link
+                            className="capitalize"
+                            href={`/categories/${tag.replace(" ", "-")}`}
+                          >
+                            {tag}
+                          </Link>
+                        </li>
+                      ))}
                   </ul>
                 </div>
                 {config.settings.InnerPaginationOptions.enableTop && (
@@ -97,15 +98,8 @@ const PostSingle = ({
                 )}
               </article>
               <div className="mt-16">
-                {disqus.enable && (
-                  <DiscussionEmbed
-                    key={theme}
-                    shortname={disqus.shortname}
-                    config={disqusConfig}
-                  />
-                )}
+                <PostComments initialComments={comments} />
               </div>
-              {/* <div className="mt-16"></div> */}
             </div>
             <Sidebar
               posts={posts.filter((post) => post.slug !== slug)}
@@ -118,11 +112,12 @@ const PostSingle = ({
         <div className="container mt-20">
           <h2 className="section-title">Related Posts</h2>
           <div className="row mt-16">
-            {relatedPosts.slice(0, 3).map((post, index) => (
-              <div key={"post-" + index} className="mb-12 lg:col-4">
-                <Post post={post} />
-              </div>
-            ))}
+            {Array.isArray(relatedPosts) &&
+              relatedPosts.slice(0, 3).map((post, index) => (
+                <div key={"post-" + index} className="mb-12 lg:col-4">
+                  <Post post={post} />
+                </div>
+              ))}
           </div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import { getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import parseMDX from "@lib/utils/mdxParser";
 const { blog_folder } = config.settings;
+import { getPostComments } from "@lib/getPostComments";
 
 // post single layout
 const Article = ({
@@ -13,6 +14,7 @@ const Article = ({
   allCategories,
   relatedPosts,
   posts,
+  comments,
 }) => {
   const { frontmatter, content } = post;
 
@@ -25,6 +27,7 @@ const Article = ({
       allCategories={allCategories}
       relatedPosts={relatedPosts}
       posts={posts}
+      comments={comments}
     />
   );
 };
@@ -48,8 +51,14 @@ export const getStaticPaths = () => {
 export const getStaticProps = async ({ params }) => {
   const { single } = params;
   const posts = getSinglePage(`content/${blog_folder}`);
-  const post = posts.find((p) => p.slug == single);
+  const post = posts.find((p) => p.slug === single);
+
+  if (!post) {
+    return { notFound: true };
+  }
+
   const mdxContent = await parseMDX(post.content);
+
   // related posts
   const relatedPosts = posts.filter((p) =>
     post.frontmatter.categories.some((cate) =>
@@ -57,7 +66,7 @@ export const getStaticProps = async ({ params }) => {
     )
   );
 
-  //all categories
+  // all categories
   const categories = getTaxonomy(`content/${blog_folder}`, "categories");
   const categoriesWithPostsCount = categories.map((category) => {
     const filteredPosts = posts.filter((post) =>
@@ -68,14 +77,19 @@ export const getStaticProps = async ({ params }) => {
       posts: filteredPosts.length,
     };
   });
+
+  // comments
+  const comments = getPostComments(single) || [];
+
   return {
     props: {
-      post: post,
-      mdxContent: mdxContent,
+      post,
+      mdxContent,
       slug: single,
       allCategories: categoriesWithPostsCount,
-      relatedPosts: relatedPosts,
-      posts: posts,
+      relatedPosts,
+      posts,
+      comments,
     },
   };
 };

@@ -25,8 +25,8 @@ exports.modules = {
 
 
 const Post = ({ post  })=>{
-    const { summary_length , blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
-    const { meta_author  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.metadata;
+    const { summary_length , blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
+    const { meta_author  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .metadata */ .Pu;
     const author = post.frontmatter.author ? post.frontmatter.author : meta_author;
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "post",

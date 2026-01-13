@@ -30,15 +30,15 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib
 
 
 const Base = ({ title , meta_title , description , image , noindex , canonical , children  })=>{
-    const { meta_image , meta_author , meta_description  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.metadata;
-    const { base_url  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.site;
+    const { meta_image , meta_author , meta_description  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .metadata */ .Pu;
+    const { base_url  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .site */ .lz;
     const router = (0,next_router__WEBPACK_IMPORTED_MODULE_6__.useRouter)();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_5___default()), {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__.site.title)
+                        children: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .site.title */ .lz.title)
                     }),
                     canonical && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
@@ -59,7 +59,7 @@ const Base = ({ title , meta_title , description , image , noindex , canonical ,
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:title",
-                        content: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__.site.title)
+                        content: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .site.title */ .lz.title)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:description",
@@ -75,7 +75,7 @@ const Base = ({ title , meta_title , description , image , noindex , canonical ,
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "twitter:title",
-                        content: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__.site.title)
+                        content: (0,_lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_2__/* .plainify */ .ab)(meta_title ? meta_title : title ? title : _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .site.title */ .lz.title)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "twitter:description",
@@ -175,7 +175,7 @@ const ImageFallback = (props)=>{
 
 const Logo = ({ src  })=>{
     // destructuring items from config object
-    const { logo , logo_white , logo_width , logo_height , logo_text , title  } = _config_config_json__WEBPACK_IMPORTED_MODULE_2__.site;
+    const { logo , logo_white , logo_width , logo_height , logo_text , title  } = _config_config_json__WEBPACK_IMPORTED_MODULE_2__/* .site */ .lz;
     const { theme , resolvedTheme  } = (0,next_themes__WEBPACK_IMPORTED_MODULE_3__.useTheme)();
     const [mounted, setMounted] = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)(false);
     (0,react__WEBPACK_IMPORTED_MODULE_5__.useEffect)(()=>setMounted(true), []);
@@ -655,7 +655,7 @@ _lib_utils_textConverter__WEBPACK_IMPORTED_MODULE_7__ = (__webpack_async_depende
 
 
 const Footer = ()=>{
-    const { copyright , footer_content  } = _config_config_json__WEBPACK_IMPORTED_MODULE_2__.params;
+    const { copyright , footer_content  } = _config_config_json__WEBPACK_IMPORTED_MODULE_2__/* .params */ .f;
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
         className: "relative left-1/2 right-1/2 -mx-[50vw] mt-12 w-screen overflow-hidden pt-[70px]",
         children: [
@@ -737,7 +737,7 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 
 
 const ThemeSwitcher = ()=>{
-    const { theme_switcher  } = config.settings;
+    const { theme_switcher  } = config/* settings */.Xd;
     const [mounted, setMounted] = (0,external_react_.useState)(false);
     const { theme , setTheme , resolvedTheme  } = (0,external_next_themes_.useTheme)();
     (0,external_react_.useEffect)(()=>setMounted(true), []);

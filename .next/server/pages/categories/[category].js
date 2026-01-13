@@ -34,7 +34,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lay
 
 
 
-const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+const { blog_folder  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
 // category page
 const Category = ({ postsByCategories , category , posts , categories  })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_layouts_Baseof__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {

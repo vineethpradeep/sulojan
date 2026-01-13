@@ -47,7 +47,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lay
 
 
 
-const { blog_folder , pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__.settings;
+const { blog_folder , pagination  } = _config_config_json__WEBPACK_IMPORTED_MODULE_1__/* .settings */ .Xd;
 const Home = ({ banner , posts , featured_posts , recent_posts , categories , promotion  })=>{
     // define state
     const sortPostByDate = (0,_lib_utils_sortFunctions__WEBPACK_IMPORTED_MODULE_13__/* .sortByDate */ .d)(posts);
@@ -64,7 +64,8 @@ const Home = ({ banner , posts , featured_posts , recent_posts , categories , pr
                         width: 1905,
                         height: 295,
                         alt: "banner-shape",
-                        priority: true
+                        priority: true,
+                        fill: true
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: "container",
@@ -98,7 +99,8 @@ const Home = ({ banner , posts , featured_posts , recent_posts , categories , pr
                                         width: 548,
                                         height: 443,
                                         priority: true,
-                                        alt: "Banner Image"
+                                        alt: "Banner Image",
+                                        fill: true
                                     })
                                 })
                             ]
@@ -140,6 +142,7 @@ const Home = ({ banner , posts , featured_posts , recent_posts , categories , pr
                                                                             className: "mr-3 h-[85px] rounded object-cover",
                                                                             src: post.frontmatter.image,
                                                                             alt: post.frontmatter.title,
+                                                                            fill: true,
                                                                             width: 105,
                                                                             height: 85
                                                                         }),

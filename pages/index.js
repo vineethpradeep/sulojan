@@ -39,6 +39,7 @@ const Home = ({
           height={295}
           alt="banner-shape"
           priority
+          fill
         />
 
         <div className="container">
@@ -74,6 +75,7 @@ const Home = ({
                   height={443}
                   priority={true}
                   alt="Banner Image"
+                  fill
                 />
               </div>
             )}
@@ -111,6 +113,7 @@ const Home = ({
                                   className="mr-3 h-[85px] rounded object-cover"
                                   src={post.frontmatter.image}
                                   alt={post.frontmatter.title}
+                                  fill
                                   width={105}
                                   height={85}
                                 />
