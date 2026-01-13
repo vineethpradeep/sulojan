@@ -17,7 +17,7 @@ const basePath = isProd ? "/sulojan.org" : "";
 //   },
 // };
 const nextConfig = {
-  output: "export",
+  output: "standalone",
   trailingSlash: true,
   images: {
     unoptimized: true,
@@ -26,7 +26,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   reactStrictMode: true,
-  output: "export",
 };
 
 export default nextConfig;

@@ -41,9 +41,9 @@ const Footer = () => {
           ))}
         </ul>
 
-        <div className="inline-flex">
+        {/* <div className="inline-flex">
           <Social source={social} className="socials mb-12 justify-center" />
-        </div>
+        </div> */}
 
         {markdownify(copyright, "p")}
       </div>

@@ -165,7 +165,7 @@ const Sidebar = ({ posts, categories, className }) => {
       )}
 
       {/* newsletter */}
-      {newsletter.enable && (
+      {/* {newsletter.enable && (
         <div className="mt-6  rounded border border-border p-6 text-center dark:border-darkmode-border">
           <h4 className="section-title">{newsletter.title}</h4>
           <p className="mt-10 text-xs">{newsletter.content}</p>
@@ -192,7 +192,7 @@ const Sidebar = ({ posts, categories, className }) => {
             </Link>
           </p>
         </div>
-      )}
+      )} */}
     </aside>
   );
 };
